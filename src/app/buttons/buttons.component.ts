@@ -9,6 +9,7 @@ export class ButtonsComponent implements OnInit {
 City: {name:string, code: string};
 cities: City[];
 selectedCity: City;
+
   constructor() { }
 
   ngOnInit() {

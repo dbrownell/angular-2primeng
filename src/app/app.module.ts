@@ -5,9 +5,10 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import {ToggleButtonModule} from 'primeng/togglebutton';
+import {SelectButtonModule} from 'primeng/selectbutton';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, ToggleButtonModule ],
+  imports:      [ BrowserModule, FormsModule, ToggleButtonModule, SelectButtonModule ],
   declarations: [ AppComponent, ButtonsComponent ],
   bootstrap:    [ AppComponent ]
 })

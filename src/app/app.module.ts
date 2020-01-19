@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import {ToggleButtonModule} from 'primeng/togglebutton';
 import {SelectButtonModule} from 'primeng/selectbutton';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ToggleButtonModule, SelectButtonModule ],
-  declarations: [ AppComponent, ButtonsComponent ],
+  declarations: [ AppComponent, ButtonsComponent, ToolbarComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

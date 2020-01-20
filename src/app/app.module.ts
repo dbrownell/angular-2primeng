@@ -76,7 +76,7 @@ import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   imports:      [ BrowserModule, BrowserAnimationsModule, FormsModule, ToggleButtonModule, SelectButtonModule,
-  ToolbarModule, SplitButtonModule, PanelModule ],
+  ToolbarModule, SplitButtonModule, PanelModule, FieldsetModule, AccordionModule ],
   declarations: [ AppComponent, ButtonsComponent, ToolbarComponent, PanelComponent ],
   bootstrap:    [ AppComponent ]
 })

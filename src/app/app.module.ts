@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -18,12 +19,11 @@ import {CheckboxModule} from 'primeng/primeng';
 import {ChipsModule} from 'primeng/primeng';
 import {CodeHighlighterModule} from 'primeng/primeng';
 import {ConfirmDialogModule} from 'primeng/primeng';
-import {SharedModule} from 'primeng/primeng';
 import {ContextMenuModule} from 'primeng/primeng';
 import {DataGridModule} from 'primeng/primeng';
 import {DataListModule} from 'primeng/primeng';
 import {DataScrollerModule} from 'primeng/primeng';
-import {DataTableModule} from 'primeng/primeng';
+//import {DataTableModule} from 'primeng/primeng';
 import {DialogModule} from 'primeng/primeng';
 import {DragDropModule} from 'primeng/primeng';
 import {DropdownModule} from 'primeng/primeng';
@@ -56,6 +56,7 @@ import {RadioButtonModule} from 'primeng/primeng';
 import {RatingModule} from 'primeng/primeng';
 import {ScheduleModule} from 'primeng/primeng';
 import {SelectButtonModule} from 'primeng/primeng';
+import {SharedModule} from 'primeng/primeng';
 import {SlideMenuModule} from 'primeng/primeng';
 import {SliderModule} from 'primeng/primeng';
 import {SpinnerModule} from 'primeng/primeng';
@@ -71,11 +72,12 @@ import {ToolbarModule} from 'primeng/primeng';
 import {TooltipModule} from 'primeng/primeng';
 import {TreeModule} from 'primeng/primeng';
 import {TreeTableModule} from 'primeng/primeng';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, ToggleButtonModule, SelectButtonModule,
-  ToolbarModule, SplitButtonModule ],
-  declarations: [ AppComponent, ButtonsComponent, ToolbarComponent ],
+  imports:      [ BrowserModule, BrowserAnimationsModule, FormsModule, ToggleButtonModule, SelectButtonModule,
+  ToolbarModule, SplitButtonModule, PanelModule ],
+  declarations: [ AppComponent, ButtonsComponent, ToolbarComponent, PanelComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
-
+  MenuItem: Array<string>;
+  items: MenuItem[];
+  
   constructor() { }
 
   ngOnInit() {
+    this.items = [
+            {label: 'Cut', icon: 'fa-cut'},
+            {label: 'Copy', icon: 'fa-copy'},
+            {label: 'Paste', icon: 'fa-paste'},
+        ];
   }
 
 }

@@ -1,25 +1,12 @@
 <h3>
-Toolbar Example
+Toolbsr Example
 </h3>
 <p-toolbar name="toolbar">
   <div class="ui-toolbar-group-left">
     <button pButton type="button" name="open" label="Open" 
-      icon="pi pi-folder-open"></button>
+      icon="pi pi-folder-open"></button>&nbsp;
     <button pButton type="button" name="new" label="New folder" 
-      icon="pi pi-plus"></button>
-    <p-splitButton  name="organize" label="Organize" 
-      icon="pi pi-check" name="organize"
-      [model]="items"></p-splitButton>
-  </div>
-
-  <div class="ui-toolbar-group-right">
-    <input name="search" type="text" size="30" pInputText 
-    [(ngModel)]="search"
-      placeholder="Search files here"/>
-      <i class="pi pi-bars"></i>
-      <button name="refresh" pButton type="button" 
-      icon="pi pi-refresh"></button>
-      <button name="help" pButton type="button" 
-      icon="pi pi-question-circle"></button>
-  </div>
+      icon="pi pi-plus"></button> 
+    
+  </div>  
 </p-toolbar>
